@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+<title>我是1号，哈哈，正在参加测试票 - 有投票</title>
+<link href="http://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://lib.baomitu.com/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://static2.youtoupiao.com/static/css/nifty.min.css" rel="stylesheet">
+<link href="http://static2.youtoupiao.com/static/css/vote_show.css?v=7.36" rel="stylesheet">
+<link href="http://at.alicdn.com/t/font_1075593_nxjean1i0ar.css" rel="stylesheet">
+<script src="http://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://lib.baomitu.com/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="http://lib.baomitu.com/layer/2.3/layer.js"></script>
+<script src="http://lib.baomitu.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+<script src="http://lib.baomitu.com/jquery.form/3.46/jquery.form.min.js"></script>
+<script src="http://apps.bdimg.com/libs/validform/5.3.2/validform.js"></script>
+<script src="http://apps.bdimg.com/libs/imagesloaded/3.0.4/imagesloaded.pkgd.min.js"></script>
+<script src="http://static2.youtoupiao.com/static/js/core5.js?v=101.26"></script>
+<link rel="shortcut icon" href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/favicon.ico"/>
+<link href="http://lib.baomitu.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+<link href="http://static2.youtoupiao.com/static/css/barrager.css" rel="stylesheet">
+<style>
+
+            </style>
+</head>
+<body>
+<div id="pjax-box">
+<style>
+
+        #viewer iframe{
+
+            overflow: hidden;
+
+        }
+
+    </style>
+<div class="swiper-slide">
+<img class="width-pull not-js-style" src="http://img.static.youtoupiao.com/banner/xiaji.jpg">
+</div>
+<div id="page-content">
+<div class="row">
+<div class="col-sm-12">
+<div class="text-lg mar-btm text-center">
+测试票 </div>
+<div class="panel">
+<div class="panel-body" id="viewer" style="overflow:hidden;">
+<p class="text-lg text-bold">
+1号
+哈哈 </p>
+<p class="text-lg text-bold">干豆腐</p>
+<div class="text-content" style="margin:20px 0;">
+<img src="http://img.static.youtoupiao.com/-vote2.content" onerror="this.src='http://static2.youtoupiao.com/static/img/profile-photos/1.png'" style="width:100%;" class="img-thumbnail">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel" style="padding-bottom:10px;">
+<div class="empty-info text-center" style="margin: 20px;">
+当前访问不是微信浏览器
+<br>
+数据已被隐藏
+<br>
+如需查看，请使用微信打开该页面
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<a href="javascript:;" class="btn btn-lg btn-success btn-block" style="margin-bottom:20px;" onclick="vote('527f850867d12c57','1fe900d14dede472')"><i class="fa fa-thumbs-up"></i> 投票</a>
+<a class="btn btn-back btn-block btn-lg btn-success" style="margin-bottom:20px;" href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/show/id/527f850867d12c57.html">
+<i class="fa fa-angle-left"></i> 返回
+</a>
+</div>
+</div>
+<div class="text-center" style="margin-bottom:20px;">
+<p></p>
+<p>
+<a href="http://tg.youtoupiao.com?f=ft" target="_blank">本活动由 有投票 提供技术支持.</a>
+</p>
+<div style="display: none">
+<script>
+
+        var _hmt = _hmt || [];
+
+        (function() {
+
+            var hm = document.createElement("script");
+
+            hm.src = "https://hm.baidu.com/hm.js?0fbff3d333cd619961eb7bb1f1910538";
+
+            var s = document.getElementsByTagName("script")[0];
+
+            s.parentNode.insertBefore(hm, s);
+
+        })();
+
+    </script>
+</div>
+</div>
+<script>
+
+        var isWX = navigator.userAgent.indexOf('MicroMessenger') > -1;
+
+        var objHistory ={
+
+            show_history: 1,
+
+        }
+
+        function pushHistory() {
+
+            console.log(history.length)
+
+            if (history.length <= 2) {
+
+                var state = {
+
+                    title: '微信投票评选系统',
+
+                    page: 'download',
+
+                    url: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/tgPage.html' + window.location.search,
+
+                };
+
+                var url = location.href;
+
+                window.history.replaceState(state, null, state.url);
+
+                window.history.pushState({ page: 'detail' }, null, url)
+
+            }
+
+            console.log(history.length)
+
+        }
+
+        if (isWX) {
+
+            if(objHistory.show_history === 1){
+
+                pushHistory();
+
+                window.addEventListener('popstate', function (e) {
+
+                    var temp = e.state;
+
+                    if (temp && "download" === temp.page) {
+
+                        location.reload();
+
+                    }
+
+                })
+
+            }
+
+        }
+
+    </script>
+<style>
+
+    .footer-side-offset{
+
+        width:100%;
+
+        height: env(safe-area-inset-bottom);
+
+        height: constant(safe-area-inset-bottom);
+
+    }
+
+</style>
+<div class="footer-side-offset"></div>
+</div>
+<style>
+
+    .bottom-newbar{
+
+        padding-bottom: env(safe-area-inset-bottom);
+
+        padding-bottom: constant(safe-area-inset-bottom);
+
+    }
+
+</style>
+<div style="width:100%;margin-top:70px;"></div>
+<div class="bottom-newbar bg-success">
+<ul>
+<li style="width:25%">
+<a class="btn-all bg-success" href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/show/id/527f850867d12c57.html">
+<i class="fa fa-home"></i>
+<p>首页</p>
+</a>
+</li>
+<li style="width:25%">
+<a class="btn-all bg-success" href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/rule/id/527f850867d12c57.html">
+<i class="iconfont icon-liebiao" style="font-size:16px;"></i>
+<p>
+详情 </p>
+</a>
+</li>
+<li style="width:25%">
+<a class="btn-all bg-success" href="javascript:;" onclick="searchKeyword();">
+<i class="fa fa-search"></i>
+<p>搜索</p>
+</a>
+</li>
+<li style="width:25%">
+<a class="btn-all bg-success" href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/ranking/id/527f850867d12c57.html">
+<i class="fa fa-trophy"></i>
+<p>排名</p>
+</a>
+</li>
+</ul>
+</div>
+<div style="background: url('http://m60519fe82bc35e4.wxvote.youtoupiao.com/static/img/bg_main.png')"></div>
+<div class="ver-code-box">
+<div class="form-group" style="padding:5px;">
+<div class="row">
+<div class="col-sm-12">
+<img class="verify-img not-js-style" src="">
+</div>
+<div class="col-sm-12">
+<input type="text" name="verify_code" placeholder="验证码" class="form-control input-lg" datatype="*">
+</div>
+</div>
+</div>
+</div>
+<div class="so-box">
+<div class="form-group" style="padding:5px;margin-top:15px;">
+<div class="row">
+<div class="col-sm-12">
+<input type="text" name="keyword" placeholder="请输入编号或参与选手" class="form-control input-lg" datatype="*">
+</div>
+</div>
+</div>
+</div>
+<div class="show-qrcode-box">
+<div class="success_img text-center" style="display: none;margin:20px auto 0;">
+<svg class="icon" aria-hidden="true" style="font-size: 50px;">
+<use xlink:href="#icon-success"></use>
+</svg>
+</div>
+<div class="error_img text-center" style="display: none;margin:20px auto 0;">
+<svg class="icon" aria-hidden="true" style="font-size: 50px;">
+<use xlink:href="#icon-tishi"></use>
+</svg>
+</div>
+<p class="sqb-h1" style="margin-top:10px;"></p>
+<img src="" class="not-js-style alert-box-qrcode">
+<p class="sqb-h2" style=""></p>
+<p>
+<a href="javascript:;" class="btn btn-success" style="text-align: center;display: block;font-size: 14px;line-height: 35px;height: 35px;width: 110px;margin: 5px auto;padding: 0;">确定</a>
+</p>
+<div class="qrcode_ad" style="margin:5px 12px;display:none;">
+<a href="javascript:;" class="qrcode_ad_link">
+<img src="" alt="" class="qrcode_ad_img" style="width:100%;">
+</a>
+</div>
+<div style="margin:5px 12px;display:none;" class="qrcode-info">
+<a href="javascript:;" onclick="promptTime()">
+<img src="" alt="" class="qrcode-info-img" style="width:100%;">
+</a>
+</div>
+</div>
+<div class="show-activity-end" style="display: none;">
+<div class="activity-icon">
+<svg class="icon" aria-hidden="true" style="font-size: 20px;color: #dad2d2;">
+<use xlink:href="#icon-guanbi"></use>
+</svg>
+</div>
+<div class="activity-img text-center" style="margin-top:35px;">
+<svg class="icon" aria-hidden="true" style="font-size: 50px;">
+<use xlink:href="#icon-jieshu"></use>
+</svg>
+</div>
+<p class="text-center activity-text">活动已结束！</p>
+<div class="activity-btn">
+<a href="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/ranking/id/527f850867d12c57.html" class="activity-btn1 text-center">查看排行榜</a>
+<a href="javascript:;" class="activity-btn2 text-center">抽奖赢免单</a>
+</div>
+</div>
+<div class="audio-box animation-rotate bg-success">
+<i class="fa fa-music"></i>
+</div>
+<div class="float-box"></div>
+<style>
+
+    .ichoujiang-box{
+
+        /*background: url("http://static2.youtoupiao.com/static/img/bg_ichoujiang.jpg");*/
+
+        display: none;
+
+        height:410px;
+
+        width:300px;
+
+        padding:0;
+
+        margin:0;
+
+    }
+
+    .ichoujiang-box .msg-box{
+
+        position: absolute;
+
+        bottom:20px;
+
+        text-align: center;
+
+        width:100%;
+
+        font-size:20px;
+
+        color: #c43606;
+
+        font-weight: bold;
+
+    }
+
+    .ichoujiang-box .msg-box .btn{
+
+        border-radius: 20px;
+
+        margin-top:10px;
+
+        width:120px;
+
+        height:40px;
+
+        line-height:40px;
+
+        padding:0;
+
+        background:#e91e63;
+
+        border:none;
+
+        font-weight: bold;
+
+        font-size:20px;
+
+    }
+
+</style>
+<div class="ichoujiang-box">
+<div class="msg-box">
+<p class="msg">恭喜您获得一次抽奖机会！</p>
+<a href="javascript:;" class="btn btn-info">立即抽奖</a>
+</div>
+</div>
+<script>
+
+    window.onerror = function (message, source, lineno, colno, error) {
+
+        console.log(message + ',' + source + ',' + lineno + ',' + colno + ',' + error)
+
+    }
+
+</script>
+<style>
+
+    </style>
+<script>
+
+    /*
+
+    var config = {
+
+        url_search: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/search/id/527f850867d12c57.html',
+
+        url_vote: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/vote2/id/527f850867d12c57.html',
+
+        token: '74be16979710d4c4e7c6647856088456',
+
+        url_votedsf: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/vote2/id/527f850867d12c57.html',
+
+        url_detail: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/detail/id/527f850867d12c57.html',
+
+    };
+
+     */
+
+    var config = {
+
+        img_tag_banner_case: '-vote2.top',
+
+        img_tag_banner: '-vote2.top',
+
+        img_tag_cover: '-vote2.cover',
+
+        img_tag_cover_1: '-vote2.cover.1',
+
+        img_tag_cover_2: '-vote2.cover.2',
+
+        img_tag_cover_3: '-vote2.cover.3',
+
+        img_tag_content: '-vote2.content',
+
+        img_tag_share: '-vote2.share',
+
+        loading: false,
+
+        page: 1,
+
+        done: false,
+
+        use_order: -1,
+
+        is_login: 0,
+
+        show_column: 6,
+
+        ver_code: 0,
+
+        cid: '527f850867d12c57',
+
+        url_get_vote_item: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/getVoteItem/id/527f850867d12c57.html',
+
+        url_err_img: 'http://static2.youtoupiao.com/static/img/profile-photos/1.png',
+
+        url_uploads_path: 'http://img.static.youtoupiao.com/',
+
+        url_search: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/search/id/527f850867d12c57.html',
+
+        url_search_api: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/searchOne/id/527f850867d12c57.html',
+
+        url_vote: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/vote/id/527f850867d12c57.html',
+
+        token: 'd41d8cd98f00b204e9800998ecf8427e',
+
+        url_votedsf: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/votedsf/id/527f850867d12c57/v/2.html',
+
+        url_detail: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/detail/id/527f850867d12c57.html',
+
+        url_ver: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/verify.html',
+
+        url_review: 'http://www.youtoupiao.com/vote/review2/id/527f850867d12c57.html',
+
+        url_share: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/share/id/527f850867d12c57/iid/1fe900d14dede472.html',
+
+        style: 'success',
+
+        btn_name: '投票',
+
+        unit_name: '票',
+
+        item_name: '参与选手',
+
+        hide_title: 0,
+
+        hide_index: 0,
+
+        hide_cover: 0,
+
+        show_rule: 0,
+
+        vote_success_img: '',
+
+        float_img:'',
+
+        qrcode_in_show: 0,
+
+        qrcode_vote_show: 4,
+
+        sign_up_count: 3,
+
+        hide_vote_count: 0,
+
+        hide_btn:0,
+
+        audio: '',
+
+        audio_iframe: '',
+
+        share_img: '',
+
+        share_desc: "",
+
+        share_title: "",
+
+        share_title_text:"测试票 - 有投票",
+
+        vote_label_id: '',
+
+        index_img_height: '',
+
+        index_img_float_type: 0,
+
+        ichoujiang_link: '',
+
+        ichoujiang_btn_img_path:'http://static2.youtoupiao.com/static/img/choujiang_btn.png',
+
+        vote_history: 0,
+
+                has_follow:1,
+
+        js_lib_ver:1.01,
+
+        bgmain : '',
+
+        debug:'',
+
+        comment: {
+
+            show_dm:0,
+
+            comment: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/voteApi/comment/vid/527f850867d12c57/viid/1fe900d14dede472.html',
+
+            get_comment_list: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/voteApi/getCommentList/vid/527f850867d12c57/viid/1fe900d14dede472.html',
+
+        },
+
+        show_ad: 1,
+
+        hide_rank:'',
+
+        rank_link: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/ranking/id/527f850867d12c57.html',
+
+        hide_copy:'',
+
+        url_ad:'http://img.static.youtoupiao.com/pdd3.jpg',
+
+        diff_time:'13109252',
+
+        link_ad:'https://mobile.yangkeduo.com/duo_roulette.html?pid=8192599_74512096&cpsSign=CL_190724_8192599_74512096_bfba8de92a482381018016aaddb362ed&range_items=1%3A100%3A999900%2C2%3A10%3A990&duoduo_type=2',
+
+        url2_ad:'http://static2.youtoupiao.com/static/img/hongbao.jpg',
+
+        link2_ad:'https://mobile.yangkeduo.com/duo_roulette.html?pid=8192599_74512096&cpsSign=CL_190724_8192599_74512096_bfba8de92a482381018016aaddb362ed&range_items=1%3A100%3A999900%2C2%3A10%3A990&duoduo_type=2',
+
+        api_ad_show: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/ad/act/pddshow.html',
+
+        api_ad_click: 'http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/ad/act/pddclick.html',
+
+
+
+        focus_ad_show: 0,
+
+        focus_ad_img: 'http://v.img.youtoupiao.com/rsyy_vote_ad.jpeg',
+
+        focus_ad_link: 'http://wxec566678f61e0f83.m.weimob.com/webreserve/ReserveBook?rid=111364&pid=56046629&wechatid=fromUsername&channel=share%5E',
+
+    };
+
+
+
+    var index_img_float_size = {
+
+        set: false,
+
+        width: 0,
+
+        height: 0
+
+    };
+
+
+
+    var bomObjs = {
+
+        ruleBox: $('.text-rule-box'),
+
+        diffTimeBox: $('.diff-time-box'),
+
+        audio: $(document).find('audio'),
+
+        audioIcon: $('.audio-box')
+
+    };
+
+
+
+    $(function () {
+
+        setTimeout(function(){
+
+            vote_item_comment.init(config.comment);
+
+        },500)
+
+
+
+
+
+        if (config.is_login === 0 && self === top && navigator.userAgent.toLowerCase().indexOf('mobile') < 0)
+
+            goUrl(config.url_review);
+
+
+
+        if (bomObjs.ruleBox.length > 0 && bomObjs.ruleBox.attr('_show') !== 'hide')
+
+            if (config.show_rule === 1) showTextRule();
+
+
+
+        if (config.vote_success_img && config.qrcode_in_show === 1){
+
+            //showQrcode('长按识别二维码', '了解更多活动详情', null, true);
+
+        }
+
+
+
+        if (bomObjs.diffTimeBox.length > 0 && !bomObjs.diffTimeBox.attr('_ing')) {
+
+            var allSecond = Number(bomObjs.diffTimeBox.attr('_diff'));
+
+            if (!window.scd) window.scd = window.setInterval(function () {
+
+                allSecond = ShowCountDown(bomObjs.diffTimeBox, allSecond, bomObjs.diffTimeBox.attr('_type'));
+
+            }, 1000);
+
+        }
+
+
+
+        if (config.audio_iframe) {
+
+            playAudio(config.audio);
+
+        }
+
+
+
+        if (config.float_img) {
+
+            playFloatBox(config.float_img, 2);
+
+        }
+
+    });
+
+</script>
+<script src="http://static2.youtoupiao.com/static/js/vote_show2.js?v=5.29"></script>
+<script src="http://at.alicdn.com/t/font_955586_jt9us7obnvl.js"></script>
+<script src="http://static2.youtoupiao.com/static/js/vote_comment.js?v=2.9"></script>
+<script src="http://static2.youtoupiao.com/static/js/jquery.barrager.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/wxJs/id/527f850867d12c57/t/15d42cca084ee0.js?url=http%3A%2F%2Fm60519fe82bc35e4.wxvote.youtoupiao.com%2Fpage%2Fdetail%2Fid%2F527f850867d12c57.html%3Fiid%3D1fe900d14dede472%26from%3Dsinglemessage%26isappinstalled%3D0"></script>
+<div style="display: none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c23f86d067126c3f515c8edb5f17107";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+<script src="http://lib.baomitu.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script>
+
+    $(function () {
+
+        requestUrlBg('http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/read/id/527f850867d12c57.html');
+
+        $('#viewer img:not(.not-js-style)').addClass('img-thumbnail').css({width:'100%',height:'auto'});
+
+        $('embed').addClass('img-thumbnail').attr('width', '100%');
+
+        $('iframe').addClass('img-thumbnail').attr('width', '100%').attr('height', $(document).width() * 0.6 + 'px').css({
+
+            width: '100%',
+
+            height: $(document).width() * 0.6 + 'px'
+
+        });
+
+        $('.text-content a').attr('target', '_blank');
+
+        var vote_item_content_box = $('#viewer');
+
+        if (vote_item_content_box[0]) {
+
+            var urls = [];
+
+            var imgs = vote_item_content_box.find('img');
+
+            imgs.each(function (index, item) {
+
+                var src = $(item).attr('src');
+
+                urls.push(src);
+
+            });
+
+            imgs.bind('click', function (e) {
+
+                wx.previewImage({
+
+                    current: $(e.currentTarget).attr('src'),
+
+                    urls: urls,
+
+                });
+
+            });
+
+        }
+
+
+
+        getVoteHistory();
+
+        ShowActivityEnd(config.diff_time)
+
+        new Swiper('.swiper-container', {
+
+            direction: 'horizontal',
+
+            autoplay: 5000,
+
+            autoplayDisableOnInteraction: false,
+
+            autoHeight: true,
+
+//                    pagination: '.swiper-pagination',
+
+            paginationClickable: true
+
+//                    effect: 'flip'
+
+        });
+
+    });
+
+
+
+    function getVoteHistory(){
+
+        if(!config.vote_history) return;
+
+        requestUrlBg('http://m60519fe82bc35e4.wxvote.youtoupiao.com/page/getVoteHistory/id/527f850867d12c57/iid/1fe900d14dede472.html', function(data){
+
+            var vh = $('.vote-history');
+
+            if(data.code===1){
+
+                vh.show();
+
+                var box = $('.vote-history-box');
+
+                box.html('');
+
+                if(data.data.length < 1){
+
+                    vh.find('thead').hide();
+
+                    box.html('<tr><td colspan="4">暂无记录</td></tr>');
+
+                }else{
+
+                    vh.find('thead').show();
+
+                }
+
+                $.each(data.data, function (index, item) {
+
+                    box.append('<tr style="padding:3px;"><td>' + item.number + '</td><td><img src="' + item.headimgurl + '" class="not-js-style img-circle" style="width:40px;height:40px;border:1px solid #ccc;margin-right:10px;"></td><td>' + item.nickname + '</td><td>' + item.timestr + '</td></tr>')
+
+                });
+
+            }else{
+
+                vh.hide();
+
+            }
+
+        }, function(data){
+
+            console.log(data);
+
+        });
+
+    }
+
+</script>
+<script>
+
+        $(function(){
+
+
+
+        })
+
+    </script>
+</div>
+
+<script type="text/javascript">
+ //   console.log(vote('527f850867d12c57','1fe900d14dede472'));
+    console.log("页面宽度为 "+screen.availWidth);
+    console.log("页面高度为 "+screen.availHeight);
+</script>
+</body>
+</html> <class 'str'>
